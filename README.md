@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](D:\vscode\projects\frontend\Frontend%20Mentor\Blog%20preview%20card\blog-preview-card-main\result\destop.jpg)<img title="" src="file:///D:/vscode/projects/frontend/Frontend Mentor/Blog preview card/blog-preview-card-main/result/mobile.jpg" alt="" data-align="inline">
+![](C:\Users\11857\AppData\Roaming\marktext\images\2025-02-16-00-06-49-image.png)<img title="" src="file:///C:/Users/11857/AppData/Roaming/marktext/images/2025-02-16-00-07-18-image.png" alt="" data-align="inline">
 
 ### Links
 
