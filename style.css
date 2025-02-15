@@ -1,3 +1,77 @@
+@media (min-width: 375px){
+    .attribution{
+        width: 279px;
+        height: 453px;
+    }
+    .tag-name{
+        font-size: 12px;
+    }
+    .publish-date{
+        font-size: 12px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:1440px) {
+    .attribution{
+        width: 336px;
+        height: 474px;
+    }
+    .tag-name{
+        font-size: 14px;
+    }
+    .publish-date{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .description{
+        font-size: 16px;
+    }
+}
+@font-face {
+    font-family: 'Algerian';
+    src: local('Algerian');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
 body{
     background-color: hsl(47,88%,63%);
 }
@@ -58,11 +132,16 @@ body{
     color: hsl(0, 0%, 7%);
 }
 .title{
+    cursor: pointer;
+    transition: 0.2s;
     font-family: 'Figtree',sans-serif;
     font-weight: 800;
     font-size: 24px;
     margin: 0;
     color: hsl(0, 0%, 7%);
+}
+.title:hover{
+    color: hsl(47,88%,63%);
 }
 .description{
     font-family: 'Figtree',sans-serif;
@@ -88,74 +167,5 @@ body{
     font-size: 14px;
     margin: 0;
     color: hsl(0, 0%, 7%);
-}
-@media (min-width: 375px){
-    .attribution{
-        width: 279px;
-        height: 453px;
-    }
-    .tag-name{
-        font-size: 12px;
-    }
-    .publish-date{
-        font-size: 12px;
-    }
-    .title{
-        font-size: 20px;
-    }
-    .description{
-        font-size: 14px;
-    }
-}
-
-@media (min-width:1440px) {
-    .attribution{
-        width: 336px;
-        height: 474px;
-    }
-    .tag-name{
-        font-size: 14px;
-    }
-    .publish-date{
-        font-size: 14px;
-    }
-    .title{
-        font-size: 24px;
-    }
-    .description{
-        font-size: 16px;
-    }
-}
-
-@font-face {
-    font-family: 'Figtree';
-    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Figtree';
-    src: url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Figtree';
-    src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Figtree';
-    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
 }
 
