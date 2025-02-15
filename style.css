@@ -1,21 +1,4 @@
-@media (min-width:1440px) {
-    .attribution{
-        width: 336px;
-        height: 474px;
-    }
-    .tag-name{
-        font-size: 14px;
-    }
-    .publish-date{
-        font-size: 14px;
-    }
-    .title{
-        font-size: 24px;
-    }
-    .description{
-        font-size: 16px;
-    }
-}
+
 @font-face {
     font-family: 'Algerian';
     src: local('Algerian');
@@ -74,8 +57,9 @@ body{
     width: 279px;
     height: 453px;
     background-color: white;
-    padding: 24px;
+    padding: 24px 24px 0px 24px;
     border-radius: 20px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
 }
 .blogImage{
     width: 100%;
@@ -150,3 +134,21 @@ body{
     color: hsl(0, 0%, 7%);
 }
 
+@media (min-width:1439px) {
+    .attribution{
+        width: 336px;
+        height: 474px;
+    }
+    .tag-name{
+        font-size: 14px;
+    }
+    .publish-date{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .description{
+        font-size: 16px;
+    }
+}
