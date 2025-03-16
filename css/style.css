@@ -1,0 +1,117 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 8%);
+}
+
+
+.socialLinkProfileCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    height: 620px;
+    width: 385px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 20px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 30px;
+    padding: 0;
+}
+.profile-avatar{
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.profile-name{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter',sans-serif;
+}
+
+.profile-address{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: hsl(75, 94%, 57%);
+    font-family: 'Inter',sans-serif;
+}
+.profile-introduction{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter',sans-serif;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    row-gap: 15px;
+    
+}
+.list-item{
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    width: 300px;
+    height: 50px;
+    margin: 0;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 20px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-family: 'Inter',sans-serif;
+    transition: background-color 0.5s,color 0.5s,cursor 0.5s;
+}
+.list-item:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    cursor: pointer;
+    
+}
+@media (max-width: 1440px) {
+    .socialLinkProfileCard{
+        height: 580px;
+        width: 330px;
+    }
+    .profile{
+        margin-top: 20px;
+    }
+    .profile-avatar{
+        height: 90px;
+        width: 90px;
+    }
+    
+    .list-item{
+        width: 280px;
+        height: 45px;
+        border-radius: 10px;
+        /* font-size: 10px; */
+
+    }
+}
+
