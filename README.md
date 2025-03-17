@@ -1,93 +1,309 @@
-# Frontend Mentor - Social links profile
+# Frontend Mentor - Social links profile solution
 
-![Design preview for the Social links profile coding challenge](./preview.jpg)
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this social links profile and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
+Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+### Links
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- Solution URL: [[GitHub - VickTan/VickTan.github.io: Social links profile](https://github.com/VickTan/VickTan.github.io)]
+- Live Site URL: https://vicktan.github.io/
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## My process
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Built with
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+### What I learned
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+#### 1. 通过伪类选择处于特殊状态的选择器，并设置其状态。
 
-## Building your project
+伪类是选择器的一种，用于选择处于特殊状态的元素。通过伪类即可为元素设置特殊状态下的样式。一般上:伪类就是开头为冒号的关键字。例如，:hover就是一个伪类
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+伪类可以分为以下两种：
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- 简单伪类
+  
+  - `:last-child`
+  
+  - `:first-child`
+  
+  - `:only-child`
+  
+  - 等等
 
-## Deploying your project
+- 用户行为伪类
+  
+  一些伪类只适用于用户以某种方式与文档交互时。
+  
+  例如，
+  
+  - `:hover`
+  
+  - `:focus`
+  
+  - 等等
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+本次练习中，悬浮状态的样式就需要用到伪类来设置。
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+```css
+.list-item:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    cursor: pointer;
+    
+}
+```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+上方代码表示,类名为list-item的元素在用户将光标移到其上方时，背景颜色会改变成`hsl(75, 94%, 57%L)` ；字体颜色变成黑色，光标呈现为指示链接的指针（一只手）
 
-## Create a custom `README.md`
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+#### 语义化HTML
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+语义化HTML是指通过选择具有明确含义的HTML标签来描述网页内容的结构和意义，而不仅仅是将其是为布局的容器。它的核心思想是让代码既能被浏览器正确渲染，又能被开发者、辅助工具（如屏幕阅读器）和搜索引擎“读懂”。
 
-## Submitting your solution
+语义化HTML，顾名思义标签的名称明确指示了内容的一样。提高代码的可维护性、便于辅助工具读取有用信息。
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+常见的语义化HTML,如下：
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- <main>  ：表示网页中的关键内容
 
-## Sharing your solution
+- <header> ： 为文档或节指定页面。一般用作介绍性内容的容器
+  
+  - 既可以表示整个网页的头部，也可以表示一篇文章或者一个区块的头部
+  
+  - 
 
-There are multiple places you can share your solution:
+- <footer> ：为文档或节规定页脚
+  
+  - 页脚通常包含文档的作者、版权信息、使用条框链接、联系信息等
+  
+  - 
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+-  <nav>  ：定义导航链接集合。
+  
+  - <nav> 标签通常放置在<header>里面，不适合放在<footer>
+  
+  - <nav>标签通常时列表，也可以放置其他标签
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- <section> ： 定义文档中的节
+  
+  - 可以将网站首页划分为简介、内容、联系信息等节
+  
+  - <section>标签内应该包含<h1>~<h6>标签
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- <article> ：规定独立的自包含内容
+  
+  - 文档有其自身的意义，并且可以独立于网站其他内容进行阅读
+  
+  - 应用场景
+    
+    - 论坛
+    
+    - 博客
+    
+    - 新闻
 
-## Got feedback for us?
+- <aside> : 页面主内容之外的某些内容（比如侧边栏）
+  
+  - <aside>内容应该与周围内容相关
+  
+  - 用来表示与网页或者文章主要内容相关，但不属于主要内容的部分
+  
+  - 通常用于表示侧边栏、推荐文章、广告、相关链接等信息
+  
+  - 在文章级别中<aside>可以用来放置文章的补充信息、评论或注释等信息
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+- ........
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+结合语义化HTML,HTML大概结构可以按照下方图片设计：
 
-**Have fun building!** 🚀
+![](C:\Users\11857\AppData\Roaming\marktext\images\2025-03-17-16-27-46-image.png)
+
+本次应用：
+
+```html
+<body>
+
+  
+  <main class="pageMain">
+    <div class="root">
+      <!-- <header></header>
+      <nav></nav> -->
+      <div class="socialLinkProfileCard">
+        <section class="profileSection">
+          <div class="profile">
+            <img class="profile-avatar" alt="avatar jessica" src="./assets/images/avatar-jessica.jpeg" >
+            <div class="profile-person">
+              <p class="profile-name">Jessica Randall</p>
+              <p class="profile-address">London, United Kingdom</p>
+            </div>
+            <p class="profile-introduction">"Front-end developer and avid reader."</p>
+          </div>
+        </section>
+        <section class="socialLink">
+          <div class="list">
+            <div class="list-item">GitHub</div>
+            <div class="list-item">Frontend Mentor</div>
+            <div class="list-item">LinkedIn</div>
+            <div class="list-item">Twitter</div>
+            <div class="list-item">Instagram</div>
+          </div>
+        </section>
+        
+      </div>
+      <!-- <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">yoyo Tan</a>
+        </div>
+      </footer> -->
+    </div>
+    
+  </main>
+  
+  
+</body>
+```
+
+
+
+#### Figma上一些内容的含义
+
+- spacing/200：是设计系统中对间距的统一命名，用于规范元素之间的间距。
+  
+  - /200：表示间距的等级（或比例），数字越大，间距越大。例如：
+    
+    - `spacing/50` → 4px
+    
+    - `spacing/100` → 8px
+    
+    - `spacing/200` → 16px
+    
+    - `spacing/300` → 24px
+    
+    -  **（具体数值因设计系统而异）**
+
+- Width、Height的相关属性
+  
+  - Fill：填充父容器的剩余空间（宽度或高度占满可用区域）
+    
+    - 使用场景：背景、响应式布局中的自适应区块
+      
+      - CSS实现：
+        
+        - 块级元素默认行为：宽度占满父容器（需父容器有明确宽度）
+        
+        - 动态填充剩余空间：使用Flexbox或Grid布局
+          
+          - 通过Flexbox实现
+            
+            ```css
+            /* Flexbox 实现 */
+            .parent {
+              display: flex;
+            }
+            .element-fill {
+              flex: 1; /* 占满剩余空间 */
+            }
+            ```
+          
+          - 通过Grid布局实现
+            
+            ```css
+            /* Grid 实现 */
+            .parent {
+              display: grid;
+              grid-template-columns: 200px 1fr; /* 1fr 表示填充剩余空间 */
+            }
+            .element-fill {
+              grid-column: 2;
+            }
+            ```
+          
+          - 传统百分比（需父容器有明确尺寸）
+            
+            ```css
+            /* 传统百分比（需父容器有明确尺寸） */
+            .element-fill {
+              width: 100%;
+              height: 100%;
+            }
+            ```
+        
+        
+  
+  - Fixed：固定模式，表示元素的宽度或高度不会根据内容或父容器自动调整，而是保持指定的固定值
+    
+    - 使用场景：图标、固定宽高的按钮、分割线
+  
+  - Hug：尺寸自动适应内容（如文本长度、子元素大小
+    
+    - 使用场景：标签、动态按钮
+    
+    - CSS中的实现
+      
+      - 将属性值指定为：max-content 
+        
+        ```css
+        .element-hug {
+          width: max-content;   /* 宽度由内容决定 */
+          display: inline-block; /* 或 inline-flex/inline-grid */
+        }
+        ```
+        
+      
+      - 使用Flexbox
+        
+        ```css
+        /* 或使用 Flexbox */
+        .parent {
+          display: flex;
+        }
+        .element-hug {
+          flex: none; /* 禁止拉伸，宽度由内容决定 */
+        }
+        ```
+        
+        
+        
+        
+
+
+
+### Continued development
+
+- 语义化HTML
+
+- 伪类和伪元素
+
+- Figma一些专业性用语
+
+### Useful resources
+
+- [HTML5 语义元素](https://www.w3school.com.cn/html/html5_semantic_elements.asp)- 该文章让我大概了解HTML语义
+- [[方向三：前端实践-HTML语义化的案例分析 | 豆包MarsCode AI刷题一、HTML语义化和非语义化 （1）HTM - 掘金](https://juejin.cn/post/7441944462933721125)](https://blog.csdn.net/m0_61505785/article/details/145660750)- 该文章让我知道为什么要用语义化HTML
